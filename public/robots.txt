@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.joshieventdecor.com
+
+# Sitemaps
+Sitemap: https://www.joshieventdecor.com/sitemap.xml

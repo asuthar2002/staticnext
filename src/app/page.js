@@ -1,101 +1,94 @@
-import Image from "next/image";
-
-export default function Home() {
+import React from "react";
+import Head from "next/head";
+import Home from "./components/Home";
+import Description from "./components/Description";
+import FAQ from "./components/FAQ";
+import Location from "./components/Location";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
+export default function App() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
+    <>
+      <Head>
+        <title>Joshieventdecor - Balloon Decor in Bangalore</title>
+        <meta
+          name="description"
+          content="Joshieventdecor specializes in stunning balloon decorations for events in Bangalore. Make your celebration unforgettable with our professional balloon decor services."
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+        <meta
+          name="keywords"
+          content="balloon decor, event decoration, Bangalore event decor, wedding decor, party decor, balloon arrangements"
+        />
+        <meta name="author" content="Joshieventdecor" />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
+        <meta
+          property="og:title"
+          content="Joshieventdecor - Balloon Decor in Bangalore"
+        />
+        <meta
+          property="og:description"
+          content="We provide top-tier balloon decor services for all types of events in Bangalore. Contact Joshieventdecor for your next celebration!"
+        />
+        <meta property="og:image" content="/images/joshiBalloonDecor.jpeg" />
+        <meta property="og:url" content="https://www.joshieventdecor.com" />
+        <meta property="og:type" content="website" />
+
+        {/* Robots Meta  */}
+        <meta name="robots" content="index, follow" />
+
+        {/* Favicon Icon */}
+        <link rel="icon" href="/images/favicon.ico" />
+
+        {/* Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Joshieventdecor",
+              url: "https://www.joshieventdecor.com", 
+              logo: "/images/favicon.ico", 
+              sameAs: [
+                "https://wa.me/918882723081",
+                "https://www.instagram.com/ballon_decortion_bangalore?utm_source=qr&igsh=ZXRoOHYxOWdnd2Ju",
+              ],
+            }),
+          }}
+        />
+      </Head>
+
+      <div>
+        <Navbar />
+        <Home />
+        <Location />
+        <Description />
+        <FAQ />
+        <Footer />
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="https://wa.me/918882723081?text=Hi%21%20I%27m%20interested%20in%20booking%20a%20balloon%20decoration%20for%20my%20event.%20Can%20you%20help%20me%20with%20the%20details%3F"
           target="_blank"
-          rel="noopener noreferrer"
+          className="fixed bottom-5 right-5 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300"
+          style={{ zIndex: 1000 }}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
+          <div className="flex items-center">
+            <FaWhatsapp size={24} />
+            <h2 className="ml-2">Chat</h2>
+          </div>
         </a>
         <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          href="tel:+918882723081"
+          className="fixed bottom-5 left-5 bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition-colors duration-300 sm:hidden"
+          style={{ zIndex: 1000 }}
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
+          <div className="flex items-center">
+            <FaPhone size={24} />
+            <h2 className="ml-2">Call</h2>
+          </div>
         </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </div>
+    </>
   );
 }

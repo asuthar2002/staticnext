@@ -1,0 +1,17 @@
+{
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Joshi Balloon Decor",
+    "image": "https://www.joshieventdecor.com/images/joshiBalloonDecor.jpeg",
+    "telephone": "+91 8882723081",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "MG Road",
+      "addressLocality": "Bangalore",
+      "addressRegion": "KA",
+      "postalCode": "560001",
+      "addressCountry": "IN"
+    },
+    "url": "https://www.joshieventdecor.com"
+  }
+  

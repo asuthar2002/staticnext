@@ -5,7 +5,8 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-[#34495E] to-[#2C3E50] text-white py-8">
+    <footer className="bg-gradient-to-r from-[#FF5733] to-[#C70039]
+ text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between items-center">
           {/* Logo & Brand Name */}

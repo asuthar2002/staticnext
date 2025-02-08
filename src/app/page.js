@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Head from "next/head";
 import Home from "./components/Home";
@@ -49,8 +50,8 @@ export default function App() {
               "@context": "https://schema.org",
               "@type": "Organization",
               name: "Joshieventdecor",
-              url: "https://www.joshieventdecor.com", 
-              logo: "/images/favicon.ico", 
+              url: "https://www.joshieventdecor.com",
+              logo: "/images/favicon.ico",
               sameAs: [
                 "https://wa.me/918882723081",
                 "https://www.instagram.com/ballon_decortion_bangalore?utm_source=qr&igsh=ZXRoOHYxOWdnd2Ju",
@@ -60,7 +61,7 @@ export default function App() {
         />
       </Head>
 
-      <div>
+      <div className="">
         <Navbar />
         <Home />
         <Location />

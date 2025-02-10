@@ -38,9 +38,9 @@ export default function FAQ() {
   };
 
   return (
-    <div className="w-full bg-gray-100 py-10 px-4 mt-10">
-      <h2 className="text-2xl font-bold text-center mb-6 bg-gray-100">
-        <div className="inline border py-2 px-4 bg-white"> Frequently Asked Questions</div>
+    <div className="w-full py-10 px-4 mt-10">
+      <h2 className="text-2xl font-bold text-center mb-6 ">
+        <div className="inline border py-2 px-4 bg-white"> FAQ</div>
       </h2>
 
       <div className="max-w-3xl mx-auto space-y-4">

@@ -60,10 +60,10 @@ export default function Description() {
   const previewText = longText.slice(0, 500); // Show only the first 500 characters initially
 
   return (
-    <div className="bg-gray-100 py-10 px-4">
+    <div className=" py-10 px-4">
       <div
         id="about"
-        className="max-w-6xl mx-auto border border-gray-300 shadow-lg rounded-lg p-6 bg-white mt-10"
+        className="max-w-6xl mx-auto border  shadow-lg rounded-lg p-6 bg-white mt-10"
       >
         <h2 className="text-2xl font-bold mb-4">Description</h2>
         <div className="text-gray-700">

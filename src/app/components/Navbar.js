@@ -13,7 +13,8 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gradient-to-r from-[#2C3E50] to-[#34495E] text-white shadow-md sticky top-0 z-50">
+    <nav className="bg-gradient-to-r from-[#FF5733] to-[#C70039]
+ text-white shadow-md sticky top-0 z-50">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         {/* Brand */}
         <h1 className="text-2xl font-bold text-[#ECF0F1] tracking-wider">

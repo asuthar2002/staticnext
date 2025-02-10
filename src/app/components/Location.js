@@ -40,13 +40,13 @@ export default function Location() {
   ];
 
   return (
-    <div className=" bg-gray-100 py-10 px-4 " id="services">
+    <div className=" py-10 px-4 " id="services">
       <h2 className="text-2xl font-bold text-center mb-6">
-        <div className="border bg-white inline py-2 px-4">Location</div>
+        <div className="border inline py-2 bg-gradient-to-r from-[#FF5733] to-[#C70039] text-white px-4">Location</div>
       </h2>
 
       {/* Location Box with Border */}
-      <div className="max-w-6xl mx-auto border border-gray-300 shadow-lg rounded-lg p-6">
+      <div className="max-w-6xl mx-auto border  shadow-lg rounded-lg p-6">
         {/* Location Grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
           {locations.map((location, index) => (

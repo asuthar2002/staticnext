@@ -21,7 +21,7 @@ const products = [
   },
   {
     image: "/images/8.jpeg",
-    name: "Classic Red & Gold Birthday Theme",
+    name: "Classic Violet Birthday Theme",
   },
 ];
 

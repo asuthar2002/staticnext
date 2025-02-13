@@ -8,10 +8,6 @@ const products2 = [
     name: "Princess or Fairytale Theme",
   },
   {
-    image: "/images/bp/3.jpeg",
-    name: "Animal Safari or Jungle Theme",
-  },
-  {
     image: "/images/bp/4.jpeg",
     name: "Under the Sea/Ocean Theme",
   },

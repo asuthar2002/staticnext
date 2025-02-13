@@ -9,7 +9,7 @@ const products5 = [
   },
   {
     image: "/images/cer/3.jpeg",
-    name: "Baby Naming Ceremony Decor",
+    name: "Home Ceremony Decor",
   },
   {
     image: "/images/cer/4.jpeg",
@@ -17,14 +17,10 @@ const products5 = [
   },
   {
     image: "/images/cer/5.jpeg",
-    name: "Graduation Ceremony Decor",
-  },
-  {
-    image: "/images/cer/6.jpeg",
     name: "Anniversary Celebration Theme",
   },
   {
-    image: "/images/cer/7.jpeg",
+    image: "/images/cer/6.jpeg",
     name: "Bridal Shower Decor",
   },
   {

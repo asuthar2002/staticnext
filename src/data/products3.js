@@ -13,7 +13,7 @@ const products3 = [
   },
   {
     image: "/images/aniv/4.jpeg",
-    name: "Fairy Tale Theme",
+    name: "Classic White Gold Theme",
   },
   {
     image: "/images/aniv/5.jpeg",
